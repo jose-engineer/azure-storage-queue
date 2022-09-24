@@ -1,7 +1,7 @@
 const { QueueServiceClient } = require("@azure/storage-queue");
 
 // Get connection string (for the associated storage account)
-const connectionString = process.env.AZURE_STORAGE_CONNECTION_STRING;
+const connectionString = process.env.AZURE_STORAGE_CONNECTION_STRING; //you have to create an environment variable exporting that variable from CLI on azure
 if(!connectionString) {
   throw new Error('Environment variable AZURE_STORAGE_CONNECTION_STRING must be set.');
 }
